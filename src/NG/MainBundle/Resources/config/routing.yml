@@ -7,3 +7,16 @@ ng_main_aboutus:
 ng_main_contact:
     path:     /contactez-nous
     defaults: { _controller: NGMainBundle:Main:contact }
+
+ng_main_solution_erp:
+    path:     /solutions-erp
+    defaults: { _controller: NGMainBundle:Main:solutions }
+
+ng_main_solutions_web:
+    path:     /solutions-web
+    defaults: { _controller: NGMainBundle:Main:solutions_web}
+
+
+ng_main_solutions_mobiles:
+    path:     /solutions-mobiles
+    defaults: { _controller: NGMainBundle:Main:solutions_mobiles}

@@ -26,5 +26,21 @@ class MainController  extends Controller{
 
         return $this->render('NGMainBundle::contact.html.twig');
     }
+    public function solutionsAction(){
 
+        return $this->render('NGMainBundle::solutions.html.twig');
+    }
+
+
+
+    public function solutions_webAction(){
+
+        return $this->render('NGMainBundle::solutions_web.html.twig');
+    }
+
+
+     public function solutions_mobilesAction(){
+
+        return $this->render('NGMainBundle::solutions_mobiles.html.twig');
+     }
 }
