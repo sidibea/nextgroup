@@ -1,0 +1,9 @@
+ng_main_homepage:
+    path:     /
+    defaults: { _controller: NGMainBundle:Main:index }
+ng_main_aboutus:
+    path:     /a-propos-de-nous
+    defaults: { _controller: NGMainBundle:Main:about }
+ng_main_contact:
+    path:     /contactez-nous
+    defaults: { _controller: NGMainBundle:Main:contact }

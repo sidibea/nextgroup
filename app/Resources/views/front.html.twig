@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="description" content="{% block meta_description %} {% endblock %}">
+    <meta name="author" content="Next Group">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Put favicon.ico and apple-touch-icon(s).png in the images folder -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CSS StyleSheets -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;amp;subset=latin,latin-ext">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Skin style (** you can change the link below with the one you need from skins folder in the css folder **) -->
+    <link rel="stylesheet" href="assets/css/skins/default.css">
+
+</head>
+<body>
+
+<!-- site preloader start -->
+<div class="page-loader">
+    <div class="loader-in"></div>
+</div>
+<!-- site preloader end -->
+
+<div class="pageWrapper">
+
+
+    <!-- Header Start -->
+    <div id="headWrapper" class="clearfix">
+
+        <!-- top bar start -->
+        <div class="top-bar">
+            {% block topbar %}
+                {% include "includes/topbar.html.twig" %}
+            {% endblock %}
+
+        </div>
+        <!-- top bar end -->
+
+        <!-- Logo, global navigation menu and search start -->
+        <header class="top-head" data-sticky="true">
+            {% include "includes/header.html.twig" %}
+
+        </header>
+        <!-- Logo, Global navigation menu and search end -->
+
+    </div>
+    <!-- Header End -->
+
+    <!-- Content Start -->
+    <div id="contentWrapper">
+        {% block content %} {% endblock %}
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer start -->
+    <footer id="footWrapper">
+        {% include "includes/footer.html.twig" %}
+
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Back to top Link -->
+    <div id="to-top" class="main-bg"><span class="fa fa-chevron-up"></span></div>
+
+</div>
+
+
+<!-- Load JS siles -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<!-- Waypoints script -->
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+
+<!-- SLIDER REVOLUTION SCRIPTS  -->
+<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Animate numbers increment -->
+<script type="text/javascript" src="assets/js/jquery.animateNumber.min.js"></script>
+
+<!-- slick slider carousel -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+<!-- Animate numbers increment -->
+<script type="text/javascript" src="assets/js/jquery.easypiechart.min.js"></script>
+
+<!-- PrettyPhoto script -->
+<script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
+
+<!-- Share post plugin script -->
+<script type="text/javascript" src="assets/js/jquery.sharrre.min.js"></script>
+
+<!-- Product images zoom plugin -->
+<script type="text/javascript" src="assets/js/jquery.elevateZoom-3.0.8.min.js"></script>
+
+<!-- Input placeholder plugin -->
+<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+
+<!-- Tweeter API plugin -->
+<script type="text/javascript" src="assets/js/twitterfeed.js"></script>
+
+<!-- Flickr API plugin -->
+<script type="text/javascript" src="assets/js/jflickrfeed.min.js"></script>
+
+<!-- MailChimp plugin -->
+<script type="text/javascript" src="assets/js/mailChimp.js"></script>
+
+<!-- NiceScroll plugin -->
+<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+
+<!-- general script file -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
