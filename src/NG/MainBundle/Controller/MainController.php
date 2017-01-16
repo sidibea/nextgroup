@@ -43,4 +43,17 @@ class MainController  extends Controller{
 
         return $this->render('NGMainBundle::solutions_mobiles.html.twig');
      }
+
+
+
+    public function service_audit_conseilAction(){
+
+        return $this->render('NGMainBundle::service_audit_conseil.html.twig');
+    }
+
+
+    public function service_suivi_formationAction(){
+
+        return $this->render('NGMainBundle::service_suivi_formation.html.twig');
+    }
 }

@@ -16,7 +16,14 @@ ng_main_solutions_web:
     path:     /solutions-web
     defaults: { _controller: NGMainBundle:Main:solutions_web}
 
-
 ng_main_solutions_mobiles:
     path:     /solutions-mobiles
     defaults: { _controller: NGMainBundle:Main:solutions_mobiles}
+
+ng_main_service_audit_conseil:
+     path:     /service-audit-conseil
+     defaults: { _controller: NGMainBundle:Main:service_audit_conseil}
+
+ng_main_service_suivi_formation:
+      path:     /service-suivi-formation
+      defaults: { _controller: NGMainBundle:Main:service_suivi_formation}
